@@ -56,44 +56,13 @@ def parse_tiddit_coverage(args, AUTOSOMES):
 	
 	tiddit_coverage = pd.read_csv(args.tiddit_cov, sep="\t", header = 0)
 	autosomes_coverage = []
-<<<<<<< HEAD
-	
-=======
 	y_coverage_records = []
-
->>>>>>> dev
+	
 	for _, bin in tiddit_coverage.iterrows():
 		if bin["quality"] < 20:
 			continue	
 		
 		chrom = str(bin["#CHR"])
-<<<<<<< HEAD
-
-		if chrom in AUTOSOMES:
-			autosomes_coverage.append(bin["coverage"])			
-	
-	autosomes_mean = np.mean(autosomes_coverage)
-
-	for _, bin in tiddit_coverage.iterrows():
-		if bin["quality"] < 20:
-			continue
-		
-		chrom = str(bin["#CHR"])
-		
-		if chrom == "Y":
-		
-			start = int(bin["start"])
-			end = int(bin["end"])
-			Y_cov =float(bin["coverage"])
-			coverage = Y_cov / autosomes_mean
-		
-				
-			yield CoverageRecord(chrom, start, end, coverage)
-		
-
-		else:
-			continue
-=======
 
 		if chrom in AUTOSOMES:
 			autosomes_coverage.append(bin["coverage"])			
@@ -112,7 +81,6 @@ def parse_tiddit_coverage(args, AUTOSOMES):
 				
 		yield CoverageRecord("Y", start, end, coverage)
 		
->>>>>>> dev
 			
 def make_probe(parent, chromosome, start, end, height, text, original_coverage=None):
 	probe = etree.SubElement(parent, 'probe')
