@@ -7,7 +7,7 @@ setup(
 	version=__version__,
 	author='Denise Ravinale',
 	author_email='denise.ravinale@regionstockholm.se',
-	url='https://github.com/denrav99/wcx2cytosure.git',
+	url='https://github.com/denrav99/WCX2CytoSure_.git',
 	description='Convert WCX output with structural variations to CytoSure format',
 	license='MIT',
 	packages=find_packages(exclude=["tests/", "dist/", "build/"]),
