@@ -10,8 +10,8 @@ It works on a set of probes, which this tool emulates.
 Requires an input .bins and .aberrations file from wisecondorx. 
 
     INSTALL:
-        git  clone https://github.com/denrav99/wcx2cytosure.git
-        cd wcx2cytosure
+        git  clone https://github.com/denrav99/WCX2CytoSure_.git
+        cd WCX2CytoSure_
         pip install -e .
 	
     or use Singularity  
