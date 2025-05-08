@@ -28,6 +28,6 @@ LC_ALL=C.UTF-8
     conda config --add channels conda-forge
     conda config --add channels bioconda
 
-    git clone https://github.com/denrav99/WCX2CytoSure_.git /bin/WCX2CytoSure_
-    cd /bin/WCX2CytoSure_ && pip install -e .
+    git clone https://github.com/denrav99/wcx2cytosure.git /bin/wcx2cytosure
+    cd /bin/wcx2cytosure && pip install -e .
 
