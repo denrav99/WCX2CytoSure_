@@ -20,11 +20,11 @@ Requires an input .bins and .aberrations file from wisecondorx.
 
     RUNNING:
         
-    wcx2cytosure --wisecondorx_cov  <input.bins.bed> --wisecondorx_aberrations <input.aberrations.bed> --out <output.cgh> 
+    wcx2cytosure --wisecondorx_cov  <input.bins.bed> --wisecondorx_aberrations <input.aberrations.bed> --tiddit_cov <path to tiddit.tab file for probes showing coverage of chrY> --out <output.cgh> 
 
     [OPTIONS]
     --wcx_size <smallest aberration size (int)> (optional)
-    --tiddit_cov <path to tiddit.tab file for probes showing coverage of chrY>
+    
 
 ## Notes on the file format
 
