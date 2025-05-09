@@ -292,8 +292,6 @@ def add_coverage_probes(probes, args, CONTIG_LENGTHS, sample_id):
 		for record in records:	
 			height = record.coverage
 			adjusted_height = (record.coverage*10)
-#			adjusted_height=(((2**height)-1)* 100) / 10
-
 			adjusted_height = min(MAX_HEIGHT, adjusted_height)
 			adjusted_height = max(MIN_HEIGHT, adjusted_height)
 			
@@ -311,8 +309,8 @@ def add_coverage_probes(probes, args, CONTIG_LENGTHS, sample_id):
 	
 		coverage_factor = 1
 
-		height = record.coverage
-		adjusted_height = (record.coverage*10)
+		height = Y_record.coverage
+		adjusted_height = (Y_record.coverage*10)
 
 		adjusted_height = min(MAX_HEIGHT, adjusted_height)
 		adjusted_height = max(MIN_HEIGHT, adjusted_height)
